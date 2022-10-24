@@ -1,0 +1,601 @@
+*{
+    box-sizing: border-box;
+}
+
+body,ul,ol,li,h1,h2,h3,p,a{
+    margin:0;
+    padding:0;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    color: #333;
+}
+
+#warpper{
+    width: 100%;
+    overflow: hidden;
+}
+
+header{
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+}
+
+.top{
+    display: block;
+    width: 100%;
+    height: 50px;
+    background: #fff180;
+}
+
+.top p{
+    position: absolute;
+    width: 450px;
+    margin-left: 42%;
+    height: 50px;
+    line-height: 50px;
+}
+
+.top img{
+    position: absolute;
+    float: left;
+    width: 50px;
+    height: 50px;
+    margin-left: 54%;
+}
+
+#container{
+    position: relative;
+    display: flex;
+    background: #fff;
+    width: 100%;
+    height: 60px;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#container .left-nav{
+    position: absolute;
+    display: none;
+    width: 300px;
+    height: 1000px;
+    background: #fff;
+    margin-top: 20px;
+    top: 60px;
+    left: 0;
+    z-index: 9999 !important;
+
+}
+
+#container .left-nav.on{
+    display: block;
+}
+
+#container button{
+    border-style: none;
+    outline: none;
+    color: #fff;
+    margin: 10px 0 0 20px;
+}
+
+#container button i{
+    font-size: 20px;
+}
+
+#container .user_id a:nth-child(2){
+    position: absolute;
+    font-size: 16px;
+    font-weight: 600;
+    margin-left: 20px;
+    height: 60px;
+    line-height: 60px;
+}
+
+.user_id img{
+    width: 60px;
+    height: 60px;
+    border-radius: 22px;
+    margin-left: 20px;
+}
+
+#container .my_list li{
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    width: 20%;
+    height: 50px;
+    line-height: 50px;
+}
+
+#container .my_list img{
+    padding-left: 30px ;
+}
+
+#container .my_list span{
+    position: absolute;
+    width: 100%;
+    height: 30px;
+    line-height: 30px;
+    margin-top: 35px;
+    text-align: center;
+    left: 18px;
+    top: 0;
+}
+
+#container .nav-list li{
+    position: relative;
+    margin: 30px 0 30px 30px;
+}
+
+#container .nav-list li:first-child{
+    margin-top: 50px;
+}
+
+#container .nav-list a{
+    font-size: 18px;
+    font-weight: 600;
+    color: #555555;
+}
+
+#container .nav-bottom li{
+    position: relative;
+    margin: 20px 0 10px 30px;
+}
+
+#container .nav-bottom a{
+    font-size: 14px;
+    color: #808080;
+    font-weight: 600;
+}
+
+
+#container .logo{
+    position: absolute;
+    width: 840px;
+    height: 60px;
+    top: 16px;
+    left: 43%;
+    margin: 0 10px 0 10px;
+
+}
+
+#container .search{
+    position: absolute;
+    float: right;
+    width: 100px;
+    height: 60px;
+    line-height: 60px;
+    top: 10px;
+    right: 0;
+}
+
+#container .search a{
+    position: absolute;
+    bottom: 10px;
+    margin-right: 10px;
+}
+
+
+.search a{
+   font-size: 24px;
+}
+
+#container .user{
+    position: absolute;
+    float: right;
+    width: 75px;
+    height: 75px;
+    top: 15px;
+    right: 0;
+}
+
+#container .user img{
+    width: 30px;
+    height: 30px;
+    outline: none;
+    border-radius: 12px;
+    margin-left: 15px;
+}
+
+#nav{
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    background: #fff;
+    float: left;
+    text-align: center;
+
+}
+
+#nav a{
+    position: relative;
+    font-size: 18px;
+    top: 10px;
+    padding: 0 30px 14px 30px;
+    color: #808080;
+}
+
+
+#nav a:focus{
+    color: #333;
+    font-weight: 600;
+    border-bottom: 3px solid #333;
+}
+
+#nav a:hover{
+    color: #333;
+    font-weight: 600;
+    border-bottom: 3px solid #333;
+}
+
+#top-banner{
+    position: relative;
+    top: 160px;
+    width: 100%;
+    height: 531px;
+    background: rgb(201, 240, 83); ;
+}
+
+#top-banner .banner {
+    position: relative;
+    margin: 0 auto;
+    top: 0;
+    left: 25%;
+}
+
+#top-banner .banner img{
+    width: 944px;
+}
+
+#section {
+    position: relative;
+    width: 1000px;
+    top: 160px;
+    margin: 0 auto;
+    background: #fff;
+    /* margin-top: 10px; */
+}
+
+#section h3 a{
+    position: relative;
+    float: left;
+    width: 100%;
+    padding: 20px;
+    font-size: 24px;
+    font-weight: 600;
+    margin: 20px;
+}
+
+#section h3 i{
+    color: #808080;
+}
+
+#wrap_new{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    margin-bottom: 50px;
+}
+
+#wrap_new .inner_emot img{
+    position: absolute;
+    display: block;
+    width: 100px;
+    height: 100px;
+    margin: 5px 50px 60px 60px;
+    top: 10px;
+    left: 0;
+}
+
+#wrap_new .list-product {
+    position: relative;
+    display: block;
+    float: left;
+    width: 25%;
+    height: 100px;
+    top: 0;
+    left: 0;
+    margin-bottom: 55px;
+}
+#wrap_new .list-product strong{
+    position: absolute;
+    float: left;
+    width: 60%;
+    bottom: -48px;
+    left: 0;
+    margin-left: 45px;
+    overflow: hidden;
+    text-align: center;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 13px;
+    font-weight: 500;
+
+}
+
+#wrap_new .list-product strong:hover{
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+#wrap_hot{
+    width: 100%;
+    height: 800px;
+    top: 30px;  
+    box-sizing: border-box;
+    float: left;
+}
+
+#hot_left{
+    position: relative;
+    width: 470px;
+    height: 600px;
+    float: left;
+    margin-left: 30px;
+}
+
+#hot_right{
+    position: relative;
+    width: 470px;
+    height: 600px;
+    float: left;
+    top: 0;
+    left:0;
+    margin-left: 30px;
+}
+
+#hot_left li img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    right: 20px;
+}
+
+#hot_right li img{
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    margin-top: 20px;
+    right: 20px;
+}
+
+#hot_left li{
+    position: relative;
+    width:  470px;
+    height: 120px;
+    line-height: 120px;
+}
+
+#hot_left li span:first-child{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 15px 12px;
+}
+
+#hot_left li p{
+    position: absolute;
+    top: -10px;
+    left: 50px;
+}
+
+#hot_left li:hover p{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#hot_right li:hover p{
+    text-decoration: underline;
+    font-weight: 700;
+}
+
+#hot_left a span{
+    position: absolute;
+    top: 12px;
+    left: 50px;
+    font-size: 12px;
+    color: #808080;
+}
+
+#hot_right li{
+    position: relative;
+    width:  470px;
+    height: 120px;
+    line-height: 120px;
+}
+
+#hot_right li span:first-child{
+    font-size: 22px;
+    font-weight: 500;
+    margin: 15px 12px;
+}
+
+#hot_right li span:nth-child(4){
+    margin-left: 30px;
+}
+
+#hot_right li p{
+    position: absolute;
+    top: -10px;
+    left: 50px;
+}
+
+#hot_right a span{
+    position: absolute;
+    top: 12px;
+    left: 50px;
+    font-size: 12px;
+    color: #808080;
+}
+
+#wrap_style{
+    position: relative;
+    width: 100%;
+    height: 900px;
+    float: left;
+}
+
+
+#wrap_style img{
+    float: left;
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+}
+
+#wrap_style .style001{
+    position: absolute;
+    top: 100px;
+    width: 100%;
+    height: 200px;
+}
+
+#wrap_style .img_list001, .img_list002, .img_list003{
+    position: absolute;
+    width: 100%;
+    float: left;
+    top: 25px;
+    right: -250px;
+    margin-left: 300px;
+}
+
+#wrap_style .tit_style001, .tit_style002, .tit_style003{
+    position: absolute;
+    font-size: 24px;
+    margin-left: 20px;
+    top: 60px;
+    left: 30px;
+}
+
+
+.style001 span{
+    font-size: 14px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 13px 10px 13px;
+    font-weight: 600;
+    margin-left: 40px;
+}
+
+.style001 a span{
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+
+#wrap_style .style002{
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 200px;
+}
+
+
+.style002 span{
+    font-size: 14px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 13px 10px 13px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.style002 a span{
+    position: absolute;
+    top: 100px;
+    left: 0;
+}
+
+#wrap_style .style003{
+    position: absolute;
+    top: 500px;
+    width: 100%;
+    height: 200px;
+}
+
+
+ #wrap_style .tit_style003{
+    position: absolute;
+    font-size: 24px;
+    margin-left: 20px;
+    top: 50px;
+    left: 30px;
+}
+
+.style003 span{
+    font-size: 14px;
+    color: #fff;
+    border-radius: 30px;
+    padding: 10px 13px 10px 13px;
+    font-weight: 600;
+    margin-left: 50px;
+}
+
+.style003 a span{
+    position: absolute;
+    top: 90px;
+    left: 0;
+} 
+
+
+#footer{
+    position: relative;
+    width: 1000px;
+    height: 150px;
+    float: left;
+    margin: 0 auto;
+    text-align: left;
+    margin-left: 500px;
+}
+
+#footer .service_info a{
+    font-size: 13px;
+    margin-left: 3px;
+    
+}
+
+#footer .service_info a:first-child{
+    margin-left: 0px;
+    
+}
+
+#footer p{
+    margin: 10px 0 10px 0;
+    font-size: 11px;
+    color: #808080;
+}
+
+#footer .list_info span{
+    font-size: 11px;
+    color: #808080;
+}
+
+#top_move_btn{
+    position: relative;
+    width: 100%;
+    height: 100px;
+    bottom: 0;  
+    float: left;
+}
+
+.top_move{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    left: 45%;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #d3d3d3;
+    border-radius: 50%;
+    cursor: pointer; 
+}
+
+.top_move i{
+    position: absolute;
+    top: 15px;
+    left: 17px;
+}
